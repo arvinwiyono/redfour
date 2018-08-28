@@ -1,4 +1,4 @@
-defmodule Physics.Converter do
+defmodule Converter do
   def to_nearest_tenth(val) do
     Float.round(val , 1)
   end
@@ -15,5 +15,5 @@ defmodule Physics.Converter do
     (meters *  3.335638620368e-9) |> round_up
   end
 
-  def round_up(val) when is_float(val), do: trunc(val)
+  defp round_up(val) when is_float(val), do: trunc(val)
 end
