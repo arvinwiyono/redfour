@@ -11,6 +11,6 @@ defmodule ConverterTest do
   end
 
   test "to_light_seconds" do
-    assert {:miles, 0.1e11} |> Converter.to_light_seconds == 53681
+    assert {:miles, 0.1e11} |> Converter.to_light_seconds(precision: 0) == 53682
   end
 end
