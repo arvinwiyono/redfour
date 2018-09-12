@@ -2,7 +2,7 @@ defmodule ConverterTest do
   use ExUnit.Case
 
   test "to to_nearest_tenth" do
-    assert Converter.to_nearest_tenth(10.11) == 10.2
+    assert Converter.to_nearest_tenth(10.11) == 10.1
     assert Converter.to_nearest_tenth(10.55) == 10.6
   end
 
